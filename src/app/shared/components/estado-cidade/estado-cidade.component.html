@@ -1,26 +1,4 @@
-<form class="form-horizontal">
-  <div class="form-group">
-    <div class="col-sm-12">
-      <label for="estado" class="control-label">Estado</label>
-    </div>
-    <div class="col-sm-12">
-      <select type="string" class="form-control" name="estado"
-             id="estado">
-      <option></option>
-      </select>
-    </div>
-  </div>
-  <br>
-  <div class="form-group">
-    <div class="col-sm-12">
-      <label for="cidade" class="control-label">Cidade</label>
-    </div>
-    <div class="col-sm-12">
-      <select type="string" class="form-control" name="cidade"
-              id="cidade">
-        <option></option>
-      </select>>
-    </div>
-  </div>
-
-</form>
+<dx-select-box label="Estados" width=300px [items]="estados" ></dx-select-box>
+<br>
+<dx-select-box label="Cidades" width=300px [items]="cidades" ></dx-select-box>
+<br>

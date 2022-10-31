@@ -1,25 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
+import DevExpress from "devextreme";
+import {Service} from "../../services/cidade-estado.service";
 
 @Component({
   selector: 'app-estado-cidade',
   templateUrl: './estado-cidade.component.html',
-  styleUrls: ['./estado-cidade.component.scss']
+  styleUrls: ['./estado-cidade.component.scss'],
+  providers: [Service],
 })
 export class EstadoCidadeComponent implements OnInit {
 
-  formulario: FormGroup;
+  estados: string[];
+  cidades: string[];
 
-  constructor() {
-    this.formulario = new FormGroup({
-      estado: new FormControl(''),
-      cidade: new FormControl('')
-    });
+  constructor(service: Service) {
+    this.estados = service.getEstados();
+    this.cidades = service.getCidades();
   }
 
   ngOnInit(){
 
-
   }
-
 }

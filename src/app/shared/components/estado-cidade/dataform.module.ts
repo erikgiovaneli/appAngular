@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ReactiveFormsModule} from "@angular/forms";
 import {EstadoCidadeComponent} from "./estado-cidade.component";
+import {DevExtremeModule} from "devextreme-angular";
 
 
 
@@ -12,7 +13,8 @@ import {EstadoCidadeComponent} from "./estado-cidade.component";
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DevExtremeModule
   ]
 })
 export class DataformModule { }

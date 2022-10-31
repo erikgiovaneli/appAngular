@@ -8,9 +8,9 @@ import { AuthService, ScreenService, AppInfoService } from './shared/services';
 import { UnauthenticatedContentModule } from './unauthenticated-content';
 import { AppRoutingModule } from './app-routing.module';
 import { TesteComponent } from './pages/teste/teste.component';
-import {ReactiveFormsModule, FormsModule} from "@angular/forms";
+import {ReactiveFormsModule} from "@angular/forms";
 import {DataformModule} from "./shared/components/estado-cidade/dataform.module";
-import {DropdownService} from "./shared/services/dropdown.service";
+import { DxDataGridModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -26,13 +26,13 @@ import {DropdownService} from "./shared/services/dropdown.service";
     FooterModule,
     UnauthenticatedContentModule,
     AppRoutingModule,
-    DataformModule
+    DataformModule,
+    DxDataGridModule,
   ],
   providers: [
     AuthService,
     ScreenService,
-    AppInfoService,
-    DropdownService
+    AppInfoService
   ],
   bootstrap: [AppComponent]
 })
