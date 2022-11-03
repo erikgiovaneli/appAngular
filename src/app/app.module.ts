@@ -11,6 +11,7 @@ import { TesteComponent } from './pages/teste/teste.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {DataformModule} from "./shared/components/estado-cidade/dataform.module";
 import { DxDataGridModule } from 'devextreme-angular';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { DxDataGridModule } from 'devextreme-angular';
     AppRoutingModule,
     DataformModule,
     DxDataGridModule,
+    HttpClientModule
   ],
   providers: [
     AuthService,

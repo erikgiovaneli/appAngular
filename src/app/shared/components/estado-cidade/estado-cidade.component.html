@@ -1,4 +1,7 @@
-<dx-select-box label="Estados" width=300px [items]="estados" ></dx-select-box>
+<dx-select-box label="Estados" width=300px [items]="estados"
+               valueExpr=sigla displayExpr="nome" (onValueChanged)="onValueChanged($event)">
+</dx-select-box>
 <br>
-<dx-select-box label="Cidades" width=300px [items]="cidades" ></dx-select-box>
+<dx-select-box label="Cidades" width=300px [items]="cidades" valueExpr=id displayExpr="nome">
+</dx-select-box>
 <br>
